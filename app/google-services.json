@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "361210959916",
+    "project_id": "newvotingsystem-41ed0",
+    "storage_bucket": "newvotingsystem-41ed0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361210959916:android:f4c8688d14016856f1d989",
+        "android_client_info": {
+          "package_name": "com.alimasood.newvotingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361210959916-qmfqk688ia49nm0u73kts43f821at9sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYtncx8poKaYpbKbyg3NqMtG1_J3v3rC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361210959916-qmfqk688ia49nm0u73kts43f821at9sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

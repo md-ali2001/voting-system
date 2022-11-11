@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".votingscreen">
+
+    <LinearLayout
+        android:background="#D3D3D3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="?attr/colorPrimaryDark"
+            android:text="GIVE VOTE AND SUBMIT"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/dob22"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+
+
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:text="Give Vote To Candidate"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700" />
+
+        <TextView
+            android:id="@+id/roll7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+
+
+
+            android:inputType="textPersonName" />
+
+
+        <CheckBox
+            android:id="@+id/op1"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+
+
+            android:background="#FFFFFF"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278hR"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+
+          />
+
+        <TextView
+            android:id="@+id/textView3278h"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278c"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/textView3278hRbcm"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op9"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+
+
+            android:background="#FFFFFF"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278cml"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278cmm"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278cms"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278hRbc"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op5"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+
+
+            android:background="#FFFFFF"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278hRb"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278hl"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/op7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#FFFFFF"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textView3278cm"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+
+
+            android:backgroundTint="@android:color/black"
+            android:textColor="@color/white"
+            android:text="SUBMIT"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

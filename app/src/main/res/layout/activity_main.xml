@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="#D3D3D3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="?attr/colorPrimaryDark"
+            android:text="ONLINE VOTING SYSTEM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/dob22"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+
+
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:text="Give Vote To Candidate"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/roll7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+
+
+
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/registercnic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+
+
+            android:background="#FFFFFF"
+            android:hint="CNIC NUMBER"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3278"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFFFFF"
+
+            android:hint="FIRST NAME"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3278h"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/sname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFFFFF"
+
+            android:hint="SECOND NAME"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3278c"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/registerpin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFFFFF"
+
+            android:hint="SET YOUR PIN"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/dobht"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+
+
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/register"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:onClick="register"
+
+            android:layout_weight="2"
+            android:backgroundTint="@android:color/black"
+            android:text="REGISTER->"
+
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/textView327"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:text="ALREADY REGISTERED?"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            style="@style/TextAppearance.AppCompat.Large" />
+
+
+        <TextView
+            android:id="@+id/textView3276"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/logincnic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFFFFF"
+
+            android:hint="CNIC NUMBER"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3278cg"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+        <EditText
+            android:id="@+id/loginpin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFFFFF"
+
+            android:hint="ENTER YOUR PIN"
+            android:inputType="textPersonName" />
+
+
+        <TextView
+            android:id="@+id/dobh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:onClick="login"
+
+            android:backgroundTint="@android:color/black"
+            android:textColor="@color/white"
+            android:text="LOGIN->"
+            style="@style/TextAppearance.AppCompat.Medium"
+
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
