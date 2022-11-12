@@ -39,7 +39,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/votingquestion"
             style="@style/TextAppearance.AppCompat.Large"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -65,6 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
+            android:tag="op1"
+            android:onClick="oncheck"
 
 
             android:background="#FFFFFF"
@@ -88,6 +90,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
+            android:tag="op2"
+            android:onClick="oncheck"
             android:background="#FFFFFF"
             style="@style/TextAppearance.AppCompat.Medium"
 
@@ -101,6 +105,7 @@
             android:layout_height="0dp"
             android:layout_weight="0.2"
 
+
             android:textAlignment="center"
             android:textColor="@color/teal_700"
             android:textSize="24sp" />
@@ -111,6 +116,8 @@
             android:layout_height="0dp"
             android:layout_weight="1.5"
             android:background="#FFFFFF"
+            android:tag="op3"
+            android:onClick="oncheck"
             style="@style/TextAppearance.AppCompat.Medium"
 
 
@@ -132,6 +139,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
+            android:tag="op4"
+            android:onClick="oncheck"
             android:background="#FFFFFF"
             style="@style/TextAppearance.AppCompat.Medium"
 
@@ -151,9 +160,11 @@
             android:textSize="24sp" />
 
         <CheckBox
-            android:id="@+id/op9"
+            android:id="@+id/op5"
             style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="match_parent"
+            android:tag="op5"
+            android:onClick="oncheck"
             android:layout_height="0dp"
             android:layout_weight="1.5"
 
@@ -175,9 +186,11 @@
             android:textSize="24sp" />
 
         <CheckBox
-            android:id="@+id/op10"
+            android:id="@+id/op6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:tag="op6"
+            android:onClick="oncheck"
             android:layout_weight="1.5"
             android:background="#FFFFFF"
             style="@style/TextAppearance.AppCompat.Medium"
@@ -197,9 +210,11 @@
             android:textSize="24sp" />
 
         <CheckBox
-            android:id="@+id/op11"
+            android:id="@+id/op7"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:tag="op7"
+            android:onClick="oncheck"
             android:layout_weight="1.5"
             android:background="#FFFFFF"
             style="@style/TextAppearance.AppCompat.Medium"
@@ -219,10 +234,12 @@
             android:textSize="24sp" />
 
         <CheckBox
-            android:id="@+id/op12"
+            android:id="@+id/op8"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
+            android:tag="op8"
+            android:onClick="oncheck"
             android:background="#FFFFFF"
             style="@style/TextAppearance.AppCompat.Medium"
 
@@ -241,10 +258,12 @@
             android:textSize="24sp" />
 
         <CheckBox
-            android:id="@+id/op5"
+            android:id="@+id/op9"
             style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:tag="op9"
+            android:onClick="oncheck"
             android:layout_weight="1.5"
 
 
@@ -265,11 +284,13 @@
             android:textSize="24sp" />
 
         <CheckBox
-            android:id="@+id/op6"
+            android:id="@+id/op10"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
+            android:onClick="oncheck"
             android:background="#FFFFFF"
+            android:tag="op10"
             style="@style/TextAppearance.AppCompat.Medium"
 
 
@@ -287,10 +308,13 @@
             android:textSize="24sp" />
 
         <CheckBox
-            android:id="@+id/op7"
+            android:id="@+id/op11"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:tag="op11"
+            android:onClick="oncheck"
             android:layout_weight="1.5"
+
             android:background="#FFFFFF"
             style="@style/TextAppearance.AppCompat.Medium"
 

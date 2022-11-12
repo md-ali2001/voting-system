@@ -39,7 +39,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/votingquestion"
             style="@style/TextAppearance.Compat.Notification.Line2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
