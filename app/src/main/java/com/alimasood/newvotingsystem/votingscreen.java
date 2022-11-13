@@ -22,7 +22,9 @@ import com.google.firebase.firestore.FirebaseFirestoreSettings;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import android.os.Bundle;
@@ -30,7 +32,7 @@ import android.os.Bundle;
 public class votingscreen extends AppCompatActivity {
     boolean check=false;
 
-    String votingquestionid;
+  public String votingquestionid;
     TextView votingquestion;
    CheckBox op1,op2,op3,op4,op5,op6,op7,op8,op9,op10,op11;
     FirebaseFirestore db ;
@@ -61,15 +63,140 @@ public class votingscreen extends AppCompatActivity {
                     for(QueryDocumentSnapshot document : task.getResult())
                     {
                         votingquestion.setText(document.getId());
-                        votingquestionid=document.getId().toString();
+
+                        DocumentReference doc=db.collection("votingquestion").document(votingquestion.getText().toString());
+                        doc.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                            @Override
+                            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                if(documentSnapshot.exists())
+                                {
+                                    String opr1=" ",opr2=" ",opr3=" ",opr4=" ",opr5=" ",opr6=" ",opr7=" ",opr8=" ",opr9=" ",opr10=" ",opr11=" ";
+                                    opr1=documentSnapshot.getString("op1");
+                                    opr2=documentSnapshot.getString("op2");
+                                    opr3=documentSnapshot.getString("op3");
+                                    opr4=documentSnapshot.getString("op4");
+                                    opr5=documentSnapshot.getString("op5");
+                                    opr6=documentSnapshot.getString("op6");
+                                    opr7=documentSnapshot.getString("op7");
+                                    opr8=documentSnapshot.getString("op8");
+                                    opr9=documentSnapshot.getString("op9");
+                                    opr10=documentSnapshot.getString("op10");
+                                    opr11=documentSnapshot.getString("op11");
+
+                                    if(!opr1.equals(" "))
+                                        op1.setText(opr1);
+                                    else
+                                        op1.setVisibility(View.INVISIBLE);
+
+                                    if(!opr2.equals(" "))
+                                        op2.setText(opr2);
+                                    else
+                                        op2.setVisibility(View.INVISIBLE);
+
+                                    if(!opr3.equals(" "))
+                                        op3.setText(opr3);
+                                    else
+                                        op3.setVisibility(View.INVISIBLE);
+
+                                    if(!opr4.equals(" "))
+                                        op4.setText(opr4);
+                                    else
+                                        op4.setVisibility(View.INVISIBLE);
+
+                                    if(!opr5.equals(" "))
+                                        op5.setText(opr5);
+                                    else
+                                        op5.setVisibility(View.INVISIBLE);
+
+                                    if(!opr6.equals(" "))
+                                        op6.setText(opr6);
+                                    else
+                                        op6.setVisibility(View.INVISIBLE);
+
+                                    if(!opr7.equals(" "))
+                                        op7.setText(opr7);
+                                    else
+                                        op7.setVisibility(View.INVISIBLE);
+
+
+                                    if(!opr8.equals(" "))
+                                        op8.setText(opr8);
+                                    else
+                                        op8.setVisibility(View.INVISIBLE);
+
+
+                                    if(!opr9.equals(" "))
+                                        op9.setText(opr9);
+                                    else
+                                        op9.setVisibility(View.INVISIBLE);
+
+                                    if(!opr10.equals(" "))
+                                        op10.setText(opr10);
+                                    else
+                                        op10.setVisibility(View.INVISIBLE);
+
+                                    if(!opr11.equals(" "))
+                                        op11.setText(opr11);
+                                    else
+                                        op11.setVisibility(View.INVISIBLE);
+
+
+
+
+
+
+
+
+
+                                    doc.get().addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+
+                                        }
+                                    });
+
+
+
+
+
+
+
+
+                                }
+                                else{
+
+                                    Toast.makeText(votingscreen.this, "went wrong", Toast.LENGTH_SHORT).show();
+
+
+                                }
+
+
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+
+                            }
+                        });
+
+
+
                     }
                 }
-                else {
+                else
+                {
 
                 }
-                op3.setText(votingquestionid);
+
+
+
+
             }
         });
+
+
+
+
     }
 
     public void oncheck(View v)
