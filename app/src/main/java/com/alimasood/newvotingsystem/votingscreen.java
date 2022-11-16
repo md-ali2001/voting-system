@@ -1,5 +1,7 @@
 package com.alimasood.newvotingsystem;
 
+import static java.lang.Integer.parseInt;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,6 +33,8 @@ import android.os.Bundle;
 
 public class votingscreen extends AppCompatActivity {
     boolean check=false;
+    String getcount;
+    int getcountint;
 
   public String votingquestionid;
     TextView votingquestion;
@@ -334,5 +338,137 @@ public class votingscreen extends AppCompatActivity {
         op9.setChecked(false);
         op10.setChecked(false);
         op1.setChecked(false);}
+    }
+
+    public void submit(View v)
+    {
+
+        if(op1.isChecked())
+        {
+     getcount="opc1";
+
+        }
+
+        if(op2.isChecked())
+        {
+            getcount="opc2";
+
+        }
+
+        if(op3.isChecked())
+        {
+            getcount="opc3";
+
+        }
+
+        if(op4.isChecked())
+        {
+            getcount="opc4";
+        }
+
+        if(op5.isChecked())
+        {
+            getcount="opc5";
+
+        }
+
+        if(op6.isChecked())
+        {
+            getcount="opc6";
+
+        }
+
+        if(op7.isChecked())
+        {
+            getcount="opc7";
+
+        }
+
+        if(op8.isChecked())
+        {
+            getcount="opc8";
+
+        }
+
+        if(op9.isChecked())
+        {
+            getcount="opc9";
+
+        }
+
+        if(op10.isChecked())
+        {
+            getcount="opc10";
+
+        }
+
+        if(op11.isChecked())
+        {
+            getcount="opc11";
+
+        }
+
+
+        DocumentReference doc=db.collection("votingquestion").document(votingquestion.getText().toString());
+        String c=votingquestion.getText().toString();
+
+        doc.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if(documentSnapshot.exists())
+                {
+                    String optioncount=documentSnapshot.getString(getcount);
+
+                    getcountint=parseInt(optioncount);
+                    getcountint++;
+                    optioncount=""+getcountint+"";
+                    Map<String, Object> votingquestion = new HashMap<>();
+
+                   votingquestion.put(getcount,optioncount);
+
+                    db.collection("votingquestion").document( c).update(votingquestion);
+
+//
+
+
+
+
+                    doc.get().addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+
+                        }
+                    });
+
+
+
+
+
+
+
+
+                }
+                else{
+
+                    Toast.makeText(votingscreen.this, "cnic not registered/invalid", Toast.LENGTH_SHORT).show();
+
+
+                }
+
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
+
+    }
+
+
+    public void resultsactivity(View v)
+    {
+
     }
 }
