@@ -469,6 +469,9 @@ public class votingscreen extends AppCompatActivity {
 
     public void resultsactivity(View v)
     {
+        Intent myIntent = new Intent(votingscreen.this, resultsactivity.class);
+
+       votingscreen.this.startActivity(myIntent);
 
     }
 }
