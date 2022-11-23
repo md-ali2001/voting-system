@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -41,11 +42,15 @@ public class votingscreen extends AppCompatActivity {
    CheckBox op1,op2,op3,op4,op5,op6,op7,op8,op9,op10,op11;
     FirebaseFirestore db ;
     FirebaseFirestoreSettings settings;
+    Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_votingscreen);
+
+        submit=findViewById(R.id.submit);
+
         votingquestion=findViewById(R.id.votingquestion);
         op1=findViewById(R.id.op1);
         op2=findViewById(R.id.op2);
@@ -409,6 +414,7 @@ public class votingscreen extends AppCompatActivity {
         }
 
 
+
         DocumentReference doc=db.collection("votingquestion").document(votingquestion.getText().toString());
         String c=votingquestion.getText().toString();
 
@@ -463,6 +469,10 @@ public class votingscreen extends AppCompatActivity {
 
             }
         });
+
+        submit.setVisibility(View.INVISIBLE);
+
+
 
     }
 

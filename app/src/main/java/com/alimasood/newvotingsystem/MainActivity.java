@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     userregisteredbyapp.put("fname",fnamestr);
                     userregisteredbyapp.put("sname", snamestr);
                     userregisteredbyapp.put("pin",registerpinstr);
+                    userregisteredbyapp.put("votedornot","0");
                     db.collection("userregisteredbyapp").document( registercnicstr);
                     db.collection("userregisteredbyapp").document(registercnicstr).set(userregisteredbyapp);
 
@@ -138,15 +139,38 @@ public class MainActivity extends AppCompatActivity {
                 if(documentSnapshot.exists())
                 {
                     String retrievedpin=documentSnapshot.getString("pin");
+                    String hasvotedornot=documentSnapshot.getString("votedornot");
+                    String votedornot="votedornot";
                  if(retrievedpin.equals(loginpinstr))
                  {
 
-                     Intent myIntent = new Intent(MainActivity.this, votingscreen.class);
+                     if(hasvotedornot.equals("0")){
 
-                     MainActivity.this.startActivity(myIntent);
+                         Map<String, Object> updatingvotedornot = new HashMap<>();
+
+                         updatingvotedornot.put( votedornot,"1");
+
+                         db.collection("userregisteredbyapp").document( logincnicstr).update(updatingvotedornot);
+
+                     Intent myIntent = new Intent(MainActivity.this, votingscreen.class);
+//                     myIntent.putExtra("key",logincnicstr);
+
+                     MainActivity.this.startActivity(myIntent);}
+
+                     else
+                     {
+                         Intent myIntent = new Intent(MainActivity.this, resultsactivity.class);
+//                     myIntent.putExtra("key",logincnicstr);
+
+                         MainActivity.this.startActivity(myIntent);
+                     }
+
 
 
                  }
+
+
+
                  else
                  {
                      Toast.makeText(MainActivity.this, "wrong pin", Toast.LENGTH_SHORT).show();
