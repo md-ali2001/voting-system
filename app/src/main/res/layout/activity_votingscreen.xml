@@ -19,10 +19,10 @@
 
         <TextView
             android:id="@+id/textView"
-            style="@style/TextAppearance.AppCompat.Large"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.4"
+            android:layout_weight="1.8"
             android:background="?attr/colorPrimaryDark"
             android:text="GIVE VOTE AND SUBMIT"
             android:textAlignment="center"
@@ -59,7 +59,7 @@
 
         <CheckBox
             android:id="@+id/op1"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1.5"
@@ -95,7 +95,7 @@
             android:textColor="@color/purple_700"
             android:textAlignment="center"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
 
 
           />
@@ -122,7 +122,7 @@
             android:textColor="@color/purple_700"
             android:tag="op3"
             android:onClick="oncheck"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
 
 
             />
@@ -148,7 +148,7 @@
             android:textColor="@color/purple_700"
             android:textAlignment="center"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
 
 
             />
@@ -167,7 +167,7 @@
 
         <CheckBox
             android:id="@+id/op5"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:tag="op5"
             android:onClick="oncheck"
@@ -203,7 +203,7 @@
             android:textAlignment="center"
             android:layout_weight="1.5"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
 
 
             />
@@ -229,7 +229,7 @@
             android:textAlignment="center"
             android:layout_weight="1.5"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
 
 
             />
@@ -255,7 +255,7 @@
             android:textColor="@color/purple_700"
             android:textAlignment="center"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
 
 
             />
@@ -273,7 +273,7 @@
 
         <CheckBox
             android:id="@+id/op9"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:textAlignment="center"
@@ -309,7 +309,7 @@
             android:textAlignment="center"
             android:background="#FFFFFF"
             android:tag="op10"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
 
 
             />
@@ -336,7 +336,7 @@
             android:layout_weight="1.5"
 
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
 
 
             />
@@ -354,16 +354,16 @@
 
         <Button
             android:id="@+id/submit"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:onClick="submit"
+            android:layout_weight="3"
 
 
             android:backgroundTint="@android:color/black"
-            android:textColor="@color/white"
+            android:onClick="submit"
             android:text="SUBMIT"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
 
             />
 
@@ -373,7 +373,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:onClick="resultsactivity"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
             android:text="VIEW RESULTS" />
 
     </LinearLayout>

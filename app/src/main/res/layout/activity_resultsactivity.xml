@@ -22,7 +22,7 @@
             style="@style/TextAppearance.AppCompat.Large"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.4"
+            android:layout_weight="2.5"
             android:background="?attr/colorPrimaryDark"
             android:text="VOTING RESULTS"
             android:textAlignment="center"
@@ -52,10 +52,10 @@
 
         <TextView
             android:id="@+id/op1"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.5"
+            android:layout_weight="1.7"
             android:background="#FFFFFF"
 
             android:tag="op1"
@@ -80,15 +80,15 @@
 
         <TextView
             android:id="@+id/op2"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.5"
-            android:tag="op2"
+            android:layout_weight="1.7"
 
-            android:textColor="@color/purple_700"
-            android:textAlignment="center"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:tag="op2"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
 
 
             />
@@ -107,15 +107,15 @@
 
         <TextView
             android:id="@+id/op3"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.5"
+            android:layout_weight="1.7"
             android:background="#FFFFFF"
-            android:textAlignment="center"
-            android:textColor="@color/purple_700"
             android:tag="op3"
+            android:textAlignment="center"
 
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/purple_700"
 
 
             />
@@ -133,15 +133,15 @@
 
         <TextView
             android:id="@+id/op4"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.5"
-            android:tag="op4"
+            android:layout_weight="1.7"
 
-            android:textColor="@color/purple_700"
-            android:textAlignment="center"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:tag="op4"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
 
 
             />
@@ -160,17 +160,17 @@
 
         <TextView
             android:id="@+id/op5"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1.7"
+            android:background="#FFFFFF"
             android:tag="op5"
+            android:textAlignment="center"
+
 
             android:textColor="@color/purple_700"
-            android:textAlignment="center"
-            android:layout_height="0dp"
-            android:layout_weight="1.5"
-
-
-            android:background="#FFFFFF"
 
 
             />
@@ -188,15 +188,15 @@
 
         <TextView
             android:id="@+id/op6"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:tag="op6"
 
-            android:textColor="@color/purple_700"
-            android:textAlignment="center"
-            android:layout_weight="1.5"
+            android:layout_weight="1.7"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:tag="op6"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
 
 
             />
@@ -214,15 +214,15 @@
 
         <TextView
             android:id="@+id/op7"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:tag="op7"
 
-            android:textColor="@color/purple_700"
-            android:textAlignment="center"
-            android:layout_weight="1.5"
+            android:layout_weight="1.7"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:tag="op7"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
 
 
             />
@@ -240,15 +240,15 @@
 
         <TextView
             android:id="@+id/op8"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.5"
-            android:tag="op8"
+            android:layout_weight="1.7"
 
-            android:textColor="@color/purple_700"
-            android:textAlignment="center"
             android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:tag="op8"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
 
 
             />
@@ -266,17 +266,17 @@
 
         <TextView
             android:id="@+id/op9"
-            style="@style/TextAppearance.AppCompat.Medium"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:textAlignment="center"
+            android:layout_weight="1.7"
+            android:background="#FFFFFF"
+
             android:tag="op9"
+            android:textAlignment="center"
+
 
             android:textColor="@color/purple_700"
-            android:layout_weight="1.5"
-
-
-            android:background="#FFFFFF"
 
 
             />
@@ -294,15 +294,15 @@
 
         <TextView
             android:id="@+id/op10"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.5"
 
-            android:textColor="@color/purple_700"
-            android:textAlignment="center"
+            android:layout_weight="1.7"
             android:background="#FFFFFF"
             android:tag="op10"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
 
 
             />
@@ -320,16 +320,16 @@
 
         <TextView
             android:id="@+id/op11"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+
+            android:layout_weight="1.7"
+            android:background="#FFFFFF"
             android:tag="op11"
 
-            android:textColor="@color/purple_700"
             android:textAlignment="center"
-            android:layout_weight="1.5"
-
-            android:background="#FFFFFF"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/purple_700"
 
 
             />
@@ -347,27 +347,27 @@
 
         <Button
             android:id="@+id/submit"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
 
 
-
+            android:layout_weight="3"
             android:backgroundTint="@android:color/black"
-            android:textColor="@color/white"
             android:text="SUBMIT"
-            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
 
             />
 
         <Button
             android:id="@+id/result"
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:layout_height="0dp"
+            android:layout_weight="2"
 
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:text="VIEW RESULTS" />
+            android:text="VIEW RESULTS"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
